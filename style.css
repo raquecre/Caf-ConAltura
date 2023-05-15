@@ -1,0 +1,52 @@
+* {
+    background-color: bisque;
+    font-family: sans-serif;
+}
+
+/*Barra Gªl negra */
+nav {
+    font-size: 14px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    align-items: center;
+    padding: 12px 40px 12px 40px;
+    gap: 341px; 
+
+    width: 1262px;
+    height: 64px;
+    left: 16px;
+    top: 16px;
+/*No entiendo porque no se pone tb negro*/
+    background: #2B2A2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+}
+
+
+/*items desde tienda hasta contacto*/
+ul {
+    
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 40px;
+    gap: 34px;
+    
+    width: 1262px;
+    height: 64px;
+    left: 16px;
+    top: 16px;
+}
+
+h2{
+color: #2A5B45;
+}
+
+/*De la planta a tu taza*/
+#plantTaze{
+    background-color: #FFFFFF;
+    
+}
