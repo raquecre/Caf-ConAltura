@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <title>Café de Altura</title>
 </head>
 
 <body>
     <nav>
         <div name="Mainlogo">
-            <img  name="Mainlogo" src="./Logo.png">
+            <img name="Mainlogo" src="./Logo.png">
         </div>
         <div id="imgMug"></div>
         <ul id="navegationBottoms">
@@ -24,37 +26,40 @@
             <li> Contacto</li>
         </ul>
 
-        <div class="navContactPhone" >
-            <img class="contactPhone" src="./Phone.png">
-             +34 919 49 05 18
-             <button> Iniciar Sesión</button>
-            </div>
-        <img name="shoppingBag" src="./Carr (1).png">
+        <div class="navContactPhone">
+            <img class="contactPhone" src="./img/Phone.png">
+            +34 919 49 05 18
+            <button> Iniciar Sesión</button>
+        </div>
+        <img name="shoppingBag" src="./img/Carr (1).png">
     </nav>
     <!--   Aquí empieza estructura grande   -->
+
     <section>
 
         <article class="plantTaze">
             <!--   1.- De la planta a tu taza   -->
             <div name="plantTazeText">
-                <h2> De la planta a tu taza</h2>
+                <h3> De la planta a tu taza</h3>
                 <h1>El mejor café del mundo, ahora en tu casa.</h1>
-                <p>Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café y que puedas
+                <p>Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café y que
+                    puedas
                     viajar desde la comodidad de tu hogaru.</p>
-                <button class="blackButton">Descubrir orígenes</button>
-                <button class="greenButton">Comprar café</button>
+                <div>
+                    <button class="blackButton">Descubrir orígenes</button>
+                    <button class="greenButton">Comprar café</button>
+                </div>
             </div>
             <div name="plantTazeImg">
                 <img id="grainsOnTree" name="Hero" src="./Hero image.png">
             </div>
-
         </article>
 
-        <article name="bestConditions" class="cards">
+        <article id="cards">
             <!--   2.- Café con las mejores condiciones -->
-            <h3 name="bestConditions">Café con las mejores condiciones</h2>
-                <div name="checklist">
-                    <button class="greenButton" name="checklist"><img class="smallLogo" src="./IconChecklist.png">
+            <h3 class="bestConditions">Café con las mejores condiciones</h2>
+                <div id="checklist">
+                    <button class="greenButton" name="checklist"><img class="smallLogo" src="./img/IconChecklist.png">
                     </button>
                     <h3 name="checklist">Recibe tu pedido sin peocupate</h3>
                     <p name="checklist">Tienes cosas más importantes en la cabeza, por eso con nuestra suscripción de
@@ -62,13 +67,13 @@
                         nunca te quedarás sin tu taza de la mañana. </p>
                 </div>
                 <div name="sending">
-                    <buttom name="sending" class="greenButton"><img class="smallLogo" src="/Truck.png"></buttom>
+                    <buttom name="sending" class="greenButton"><img class="smallLogo" src="./img/Truck.png"></buttom>
                     <h3 name="sending">Envío en 24/48h</h3>
                     <p name="sending">Pide tu café antes de las 12h y lo recibirás al día siguiente.</p>
                 </div>
                 <div name="discountsBenefits">
                     <button name="discountsBenefits" class="greenButton"><img class="smallLogo"
-                            src="./gift.png"></button>
+                            src="./img/gift.png"></button>
                     <h3 name="discountsBenefits">Descuentos y beneficios</h3>
                     <p name="discountsBenefits">Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa, para
                         que lo descubras junto a nosotros.</p>
@@ -79,11 +84,11 @@
             <!--   3.- Novedades    -->
             <h2 name="newFeatures">Novedades</h2>
             <div name="CoffeeBagCostaRica">
-                <!--   CostaRica   -->
+                <!--   CostaRica   poner imagen de bolsa ya hecha -->
+
                 <div name="CoffeeBag">
-                    <img name="CoffeeBag" src="./CoffeeBag.png">
-                    <img name="CoffeeBag" id='bagCostaRica' src="./CoffeeTagCostaRica.png">
-                    <img name="CoffeeBag" src="./Logo.png" class="smallLogo">
+                    <img class="CoffeeBag" src="./img/CoffeeBagCostaRica.svg">
+                    
                 </div>
                 <button name="costaRica">Costa Rica Tarazú
                     <p name="costaRica"> 9,00€</p>
@@ -93,9 +98,8 @@
             <div name="CoffeeBagColombia">
                 <!--  Colombia   -->
                 <div name="CoffeeBag">
-                    <img name="CoffeeBag" src="./CoffeeBag.png">
-                    <img name="CoffeeBag" id="bagColombia" src="./CoffeeTagColombia.png">
-                    <img name="CoffeeBag" src="./Logo.png" class="smallLogo">
+                    <img class="CoffeeBag" src="./img/CoffeeBagColombia.svg">
+                    
                 </div>
                 <button name="costaRica">Colombia Los Naranjos
                     <p name="costaRica"> 9,00€</p>
@@ -105,9 +109,7 @@
             <div name="CoffeeBagLaos">
                 <!--   Laos   -->
                 <div name="CoffeeBag">
-                    <img name="CoffeeBag" src="./CoffeeBag.png">
-                    <img name="CoffeeBag" id="bagLaos" src="./CoffeeTagLaos.png">
-                    <img name="CoffeeBag" src="./Logo.png" class="smallLogo">
+                    <img class="CoffeeBag" src="./img/CoffeeBagLaos.svg">
                 </div>
                 <button name="costaRica">Laos Amanecer
                     <p name="costaRica"> 9,00€</p>
@@ -118,9 +120,7 @@
             <div name="CoffeeBagEtiopia">
                 <!--   Etiopía   -->
                 <div name="CoffeeBag">
-                    <img name="CoffeeBag" src="./CoffeeBag.png">
-                    <img name="CoffeeBag" id="bagEtiopia" src="./CoffeeTagEtiopia.png">
-                    <img name="CoffeeBag" src="./Logo.png" class="smallLogo">
+                    <img class="CoffeeBag" src="./img/CoffeeBagEtiopia.svg">
                 </div>
                 <button name="costaRica">Etiopía Yrgacheff
                     <p name="costaRica"> 9,00€</p>
@@ -133,7 +133,7 @@
 
             <p>
                 <link href="#"> Ver Todos
-                <img src="./arrowRight.svg">
+                <img src="./img/arrowRight.svg">
             </p>
 
         </article>
@@ -141,7 +141,7 @@
         <article name='faqs'>
             <h2 name='faqs'>Preguntas Frecuentes</h2>
             <div id='whoToOrder'>
-                <h3 class="whoToOrder"> ¿Cómo hago el pedido? <img src="./arrowUp.png"> </h3>
+                <h3 class="whoToOrder"> ¿Cómo hago el pedido? <img src="./img/arrowUp.png"> </h3>
                 <p class="whoToOrder"> Viajamos constantemente para encontrar los mejores granos y a los agricultores
                     más exigentes. Si
                     podemos ofrecerte estos precios es porque tratamos directamente con los productores de café, sin
@@ -150,18 +150,18 @@
 
             </div>
             <div id="whyLowPrices">
-                <h3 class="whyLowPrices">¿Por qué los precios son tan bajos? <img src="./arrowUp.png"></h3>
+                <h3 class="whyLowPrices">¿Por qué los precios son tan bajos? <img src="./img/arrowUp.png"></h3>
                 <p class="whyLowPrices">Viajamos constantemente para encontrar los mejores granos y a los agricultores
                     más exigentes. Si podemos ofrecerte estos precios es porque tratamos directamente con los
                     productores de café, sin intermediarios. Así obtenemos el mejor precio para ti y la persona que está
                     detrás de los granos de café recibe el mayor beneficio posible. </p>
             </div>
             <div id="coffeeInOffice">
-                <h3 class="coffeeInOffice">¿Es posible enviar café a mi oficina? <img src="./arrowDown.svg" </h3>
+                <h3 class="coffeeInOffice">¿Es posible enviar café a mi oficina? <img src="./img/arrowDown.svg" </h3>
             </div>
             <p>
                 <link href="#"> Resolvemos tus dudas
-                <img src="./arrowRight.svg">
+                <img src="./img/arrowRight.svg">
             </p>
         </article>
 
@@ -173,11 +173,11 @@
                 pedido y llévate un descuento</p>
             <p>
                 <link href="#"> Cómo llegar
-                <img src="./arrowRight.svg">
+                <img src="./img/arrowRight.svg">
             </p>
         </div>
         <div name="plantTazeImg">
-            <img name="CooffeeShopImg" src="./CoffeeBar.png">
+            <img name="CooffeeShopImg" src="./img/CoffeeBar.png">
             <article>
                 <div name="contactUsInfo">
                     <h3>Entra en contacto con nosotros</h3>
@@ -190,11 +190,11 @@
                         <p name="contactUsInfo" class="direction">Springfield, OR 12345</p>
                     </div>
                     <div class="contactPhone">
-                        <img class="contactPhone" src="./Phone.png">
+                        <img class="contactPhone" src="./img/Phone.png">
                         <p name="contactUsInfo" class="contactPhone">+1 (555) 123-4567</p>
                     </div>
                     <div>
-                        <img class="contactEmail" src="./Phone.png">
+                        <img class="contactEmail" src="./img/Phone.png">
                         <p name="contactUsInfo" class="contactEmail">support@example.com</p>
                     </div>
                     <p name="contactUsInfo" class="findJob"> ¿Buscas un trabajo?
@@ -212,7 +212,7 @@
                     <label name="QuestionPhone">Teléfono</label>
                     <input name="QuestionPhone" type="number">
 
-                    <label name="QuestionEmail" >en q</label>
+                    <label name="QuestionEmail">en q</label>
                     <input name="QuestionEmail" type="email">
 
                 </div>
