@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+    </style>
+
+
     <title>Café de Altura</title>
 </head>
 
 <body>
     <nav>
-        <p class="mainlogo">cafedealtura.com</p>
+        <p id="webCafeDeAltura">cafedealtura.com</p>
 
         <img name="mainlogo" src="./img/taza.png">
         <ul id="navegationBottoms">
@@ -44,21 +47,21 @@
                 <p>Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café y que
                     puedas
                     viajar desde la comodidad de tu hogaru.</p>
-                <div>
+                <div class="plantButtons">
                     <button class="blackButton">Descubrir orígenes</button>
-                    <button class="greenButton">Comprar café</button>
+                    <button class="greenButton bigButton">Comprar café</button>
                 </div>
             </div>
             <div name="plantTazeImg">
                 <img id="grainsOnTree" name="Hero" src="./img/Hero image.png">
             </div>
         </article>
-        <h3 class="bestConditions"> Café con las mejores condiciones </h3>
+
         <article id="cardsBestConditions">
             <!--   2.- Café con las mejores condiciones -->
-
+            <h3 class="bestConditions"> Café con las mejores condiciones </h3>
             <div class="cardsBestConditionsItems" id="checklist">
-                <button class="greenButton" class="smallLogo"><img src="./img/IconChecklist.png">
+                <button class="greenButton  smallButton"><img src="./img/IconChecklist.png">
                 </button>
                 <h3>Recibe tu pedido sin peocupate</h3>
                 <p>Tienes cosas más importantes en la cabeza, por eso con nuestra suscripción de
@@ -66,54 +69,54 @@
                     nunca te quedarás sin tu taza de la mañana. </p>
             </div>
             <div class="cardsBestConditionsItems" id="sending">
-                <buttom class="greenButton" class="smallLogo"><img src="./img/Truck.png"></buttom>
+                <buttom class="greenButton  smallButton"><img src="./img/Truck.png"></buttom>
                 <h3>Envío en 24/48h</h3>
                 <p>Pide tu café antes de las 12h y lo recibirás al día siguiente.</p>
             </div>
             <div class="cardsBestConditionsItems" id="discountsBenefits">
-                <button class="greenButton" class="smallLogo"><img src="./img/gift.png"></button>
+                <button class="greenButton  smallButton"><img src="./img/gift.png"></button>
                 <h3>Descuentos y beneficios</h3>
                 <p>Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa, para
                     que lo descubras junto a nosotros.</p>
             </div>
         </article>
-           <!--   3.- Novedades    -->
+        <!--   3.- Novedades    -->
         <article id="newFeatures" class="cards">
-           
+
             <h2 class="newFeatures">Novedades</h2>
+            <div id="coffeeBagfor4">
+                <!--   CostaRica    -->
+                <div class="coffeeBag">
+                    <img src="./img/CoffeeBagCostaRica.svg">
+                    <h4>Costa Rica Tarazú</h4>
+                    <p name="costaRica"> 9,00€</p>
+                    <button class="greenButton bigButton">Añadir</button>
+                </div>
 
-              <!--   CostaRica    -->
-            <div id="coffeeBagCostaRica">
-                <img src="./img/CoffeeBagCostaRica.svg">
-                <h4>Costa Rica Tarazú</h4>
-                <p name="costaRica"> 9,00€</p>
-                <button class="greenButton">Añadir</button>
-            </div>
+                <!--  Colombia   -->
+                <div class="coffeeBag">
+                    <img class="coffeeBag" src="./img/CoffeeBagColombia.svg">
+                    <h4>Colombia Los Naranjos</h4>
+                    <p name="costaRica"> 9,00€</p>
+                    <button class="greenButton bigButton">Añadir</button>
+                </div>
 
-             <!--  Colombia   -->
-            <div name="coffeeBagColombia">
-                <img class="coffeeBag" src="./img/CoffeeBagColombia.svg">
-                <h4>Colombia Los Naranjos</h4>
-                <p name="costaRica"> 9,00€</p>
-                <button class="greenButton">Añadir</button>
-            </div>
+                <!--   Laos   -->
+                <div class="coffeeBag">
+                    <img class="CoffeeBag" src="./img/Coffee bagLaos.svg">
+                    <h4>Laos Amanecer</h4>
+                    <p name="costaRica"> 9,00€</p>
+                    <button class="greenButton bigButton">Añadir</button>
+                </div>
 
-            <!--   Laos   -->
-            <div name="coffeeBagLaos">
-                <img class="CoffeeBag" src="./img/CoffeeBagLaos.svg">
-                <h4>Laos Amanecer</h4>
-                <p name="costaRica"> 9,00€</p>
-                <button class="greenButton">Añadir</button>
-            </div>
-
-            <!--   Etiopía   -->
-            <div name="CoffeeBagEtiopia">
-                <img class="CoffeeBag" src="./img/CoffeeBagEtiopia.svg">
-                <h4> Etiopía Yrgacheff</h4>
-                <p name="costaRica"> 9,00€</p>
-
+                <!--   Etiopía   -->
+                <div class="coffeeBag">
+                    <img class="CoffeeBag" src="./img/CoffeeBagEtiopia.svg">
+                    <h4> Etiopía Yrgacheff</h4>
+                    <p name="costaRica"> 9,00€</p>
+                </div>
                 <!--   este botón NO esta seleccionado  -->
-                <button class="greenButton">Añadir</button>
+                <button class="greenButton bigButton">Añadir</button>
                 <!--   aquí inluyen el cursor  -->
                 <!--   no sé conseguir el fondo  -->
             </div>
