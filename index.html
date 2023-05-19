@@ -13,10 +13,9 @@
 
 <body>
     <nav>
-        <div name="Mainlogo">
-            <img name="Mainlogo" src="./Logo.png">
-        </div>
-        <div id="imgMug"></div>
+        <p class="mainlogo">cafedealtura.com</p>
+
+        <img name="mainlogo" src="./img/taza.png">
         <ul id="navegationBottoms">
 
             <li> Tienda</li>
@@ -51,82 +50,70 @@
                 </div>
             </div>
             <div name="plantTazeImg">
-                <img id="grainsOnTree" name="Hero" src="./Hero image.png">
+                <img id="grainsOnTree" name="Hero" src="./img/Hero image.png">
             </div>
         </article>
-
-        <article id="cards">
+        <h3 class="bestConditions"> Café con las mejores condiciones </h3>
+        <article id="cardsBestConditions">
             <!--   2.- Café con las mejores condiciones -->
-            <h3 class="bestConditions">Café con las mejores condiciones</h2>
-                <div id="checklist">
-                    <button class="greenButton" name="checklist"><img class="smallLogo" src="./img/IconChecklist.png">
-                    </button>
-                    <h3 name="checklist">Recibe tu pedido sin peocupate</h3>
-                    <p name="checklist">Tienes cosas más importantes en la cabeza, por eso con nuestra suscripción de
-                        café,
-                        nunca te quedarás sin tu taza de la mañana. </p>
-                </div>
-                <div name="sending">
-                    <buttom name="sending" class="greenButton"><img class="smallLogo" src="./img/Truck.png"></buttom>
-                    <h3 name="sending">Envío en 24/48h</h3>
-                    <p name="sending">Pide tu café antes de las 12h y lo recibirás al día siguiente.</p>
-                </div>
-                <div name="discountsBenefits">
-                    <button name="discountsBenefits" class="greenButton"><img class="smallLogo"
-                            src="./img/gift.png"></button>
-                    <h3 name="discountsBenefits">Descuentos y beneficios</h3>
-                    <p name="discountsBenefits">Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa, para
-                        que lo descubras junto a nosotros.</p>
-                </div>
+
+            <div class="cardsBestConditionsItems" id="checklist">
+                <button class="greenButton" class="smallLogo"><img src="./img/IconChecklist.png">
+                </button>
+                <h3>Recibe tu pedido sin peocupate</h3>
+                <p>Tienes cosas más importantes en la cabeza, por eso con nuestra suscripción de
+                    café,
+                    nunca te quedarás sin tu taza de la mañana. </p>
+            </div>
+            <div class="cardsBestConditionsItems" id="sending">
+                <buttom class="greenButton" class="smallLogo"><img src="./img/Truck.png"></buttom>
+                <h3>Envío en 24/48h</h3>
+                <p>Pide tu café antes de las 12h y lo recibirás al día siguiente.</p>
+            </div>
+            <div class="cardsBestConditionsItems" id="discountsBenefits">
+                <button class="greenButton" class="smallLogo"><img src="./img/gift.png"></button>
+                <h3>Descuentos y beneficios</h3>
+                <p>Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa, para
+                    que lo descubras junto a nosotros.</p>
+            </div>
         </article>
+           <!--   3.- Novedades    -->
+        <article id="newFeatures" class="cards">
+           
+            <h2 class="newFeatures">Novedades</h2>
 
-        <article name="newFeatures" class="cards">
-            <!--   3.- Novedades    -->
-            <h2 name="newFeatures">Novedades</h2>
-            <div name="CoffeeBagCostaRica">
-                <!--   CostaRica   poner imagen de bolsa ya hecha -->
+              <!--   CostaRica    -->
+            <div id="coffeeBagCostaRica">
+                <img src="./img/CoffeeBagCostaRica.svg">
+                <h4>Costa Rica Tarazú</h4>
+                <p name="costaRica"> 9,00€</p>
+                <button class="greenButton">Añadir</button>
+            </div>
 
-                <div name="CoffeeBag">
-                    <img class="CoffeeBag" src="./img/CoffeeBagCostaRica.svg">
-                    
-                </div>
-                <button name="costaRica">Costa Rica Tarazú
-                    <p name="costaRica"> 9,00€</p>
-                </button>
-                <button class="selectButton">Añadir</button>
+             <!--  Colombia   -->
+            <div name="coffeeBagColombia">
+                <img class="coffeeBag" src="./img/CoffeeBagColombia.svg">
+                <h4>Colombia Los Naranjos</h4>
+                <p name="costaRica"> 9,00€</p>
+                <button class="greenButton">Añadir</button>
             </div>
-            <div name="CoffeeBagColombia">
-                <!--  Colombia   -->
-                <div name="CoffeeBag">
-                    <img class="CoffeeBag" src="./img/CoffeeBagColombia.svg">
-                    
-                </div>
-                <button name="costaRica">Colombia Los Naranjos
-                    <p name="costaRica"> 9,00€</p>
-                </button>
-                <button class="selectButton">Añadir</button>
-            </div>
-            <div name="CoffeeBagLaos">
-                <!--   Laos   -->
-                <div name="CoffeeBag">
-                    <img class="CoffeeBag" src="./img/CoffeeBagLaos.svg">
-                </div>
-                <button name="costaRica">Laos Amanecer
-                    <p name="costaRica"> 9,00€</p>
-                </button>
-                <button class="selectButton">Añadir</button>
 
+            <!--   Laos   -->
+            <div name="coffeeBagLaos">
+                <img class="CoffeeBag" src="./img/CoffeeBagLaos.svg">
+                <h4>Laos Amanecer</h4>
+                <p name="costaRica"> 9,00€</p>
+                <button class="greenButton">Añadir</button>
             </div>
+
+            <!--   Etiopía   -->
             <div name="CoffeeBagEtiopia">
-                <!--   Etiopía   -->
-                <div name="CoffeeBag">
-                    <img class="CoffeeBag" src="./img/CoffeeBagEtiopia.svg">
-                </div>
-                <button name="costaRica">Etiopía Yrgacheff
-                    <p name="costaRica"> 9,00€</p>
-                </button>
+                <img class="CoffeeBag" src="./img/CoffeeBagEtiopia.svg">
+                <h4> Etiopía Yrgacheff</h4>
+                <p name="costaRica"> 9,00€</p>
+
                 <!--   este botón NO esta seleccionado  -->
-                <button>Añadir</button>
+                <button class="greenButton">Añadir</button>
                 <!--   aquí inluyen el cursor  -->
                 <!--   no sé conseguir el fondo  -->
             </div>
