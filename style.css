@@ -1,25 +1,26 @@
+/*https://s3-alpha-sig.figma.com/img/03a7/c79a/086aa1e226e5adfe010fd0fb3ff3e2cb?Expires=1685318400&Signature=CAlTit-JRAZrKabAm3GraaDpYhg3X0NGEEiH3QjpG96AmlsdEuz1H4N3ZFr-Y7uhCN-Ow7QXE20v18NxhYYx53i7koCVJUVRrLJ7llo8WvKunZequToJotQtdJ5WtH7PJeoImwJD2SbHN3v2wznyD10Pwg6f5qcc6nd4Q9KE6V-hBi0MVRuiudWWJyKpCBU3sPybGZt0dVlOFTKZFD6vnOkfSOIwnKozq3Rcx5uf1DrwFTm3botGQOe2xrpk-9w2l46CLbHpQiKQpaHEm8F5B-ydPB1pSWTtEU1Uvg2cfX94pvXdpj1ur8ONvGa71v1YeObFg4gbb7xBMd8LNwPl1g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 
-
-/*https://s3-alpha-sig.figma.com/img/03a7/c79a/086aa1e226e5adfe010fd0fb3ff3e2cb?Expires=1685318400&Signature=CAlTit-JRAZrKabAm3GraaDpYhg3X0NGEEiH3QjpG96AmlsdEuz1H4N3ZFr-Y7uhCN-Ow7QXE20v18NxhYYx53i7koCVJUVRrLJ7llo8WvKunZequToJotQtdJ5WtH7PJeoImwJD2SbHN3v2wznyD10Pwg6f5qcc6nd4Q9KE6V-hBi0MVRuiudWWJyKpCBU3sPybGZt0dVlOFTKZFD6vnOkfSOIwnKozq3Rcx5uf1DrwFTm3botGQOe2xrpk-9w2l46CLbHpQiKQpaHEm8F5B-ydPB1pSWTtEU1Uvg2cfX94pvXdpj1ur8ONvGa71v1YeObFg4gbb7xBMd8LNwPl1g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4*/
-* {
-    font-family: 'Inter', sans-serif;
+body {
+    width: 1280px;
+    height: 3480px;
 }
 
-/*ajustes de texto base*/
+/*ajustes de texto */
 h1 {
-    font-style: normal;
-    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
     font-size: 40px;
     line-height: 44px;
     /* or 110% */
     color: #000000;
+    margin: 0px;
 }
 
 h2 {
     color: #2A5B45;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
@@ -27,9 +28,10 @@ h2 {
 
 h3 {
     font-style: normal;
-    font-weight: 600;
+
     font-size: 18px;
-    line-height: 24px;
+    font-weight: bold;
+
     /* identical to box height, or 133% */
     /* Green */
     color: #2A5B45;
@@ -38,12 +40,15 @@ h3 {
 h4 {
     font-size: 14px;
     text-align: center;
+    font-weight: bold;
+
 }
 
 p {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+
 
     /*  line-height: 16px; */
     /* or 114% */
@@ -55,49 +60,55 @@ p {
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 12px 24px;
-    gap: 8px;
-
-    /*  width: 141px; */
+    align-items: center;
+    font-weight: bold;
+    width: 141px; 
     height: 40px;
     left: 16px;
     top: 16px;
-
     background: #1F1815;
     border-radius: 4px;
 }
 
+
 .greenButton {
     color: #FFFFFF;
-    align-items:center;
-    /*  width: 137px; */
-    height: 40px;
+    /*align-items:center;*/
+      width: 137px; 
     background: #2A5B45;
     border-radius: 4px;
     margin: 0%;
+    font-weight: bold;
+
+
 }
-.smallLogo{
+
+
+.smallButton {
     width: 64px;
     height: 64px;
 }
 
 /*Barra Gªl negra */
+#webCafeDeAltura {
+    font-size: 23.46px;
+
+}
 
 nav {
-    font-size: 14px;
+
+    height: 64px;
+    left: 16px;
+    top: 16px;
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
     align-content: space-between;
     align-items: center;
     align-items: center;
-    padding: 12px 40px 12px 40px;
-    height: 64px;
-    left: 16px;
-    top: 16px;
-    /*No entiendo porque no se pone tb negro*/
+    padding: 12px 40px;
+
+
     background: #2B2A2B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
 }
@@ -111,10 +122,19 @@ ul {
     align-items: center;
     padding: 12px 40px;
     gap: 34px;
-
     height: 64px;
     left: 16px;
     top: 16px;
+}
+
+#navContactPhone {
+    width: 288px;
+    height: 40px;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    align-items: center;
+
 }
 
 /* Estructura gªl página*/
@@ -137,33 +157,48 @@ article.plantTaze {
     display: flex;
     flex-direction: row;
     align-items: center;
+    
+    height: 486px;
+    width: 1280px;
+    left: 0px;
+    top: 64px;
+    border-radius: 0px;
     padding: 48px 40px;
     gap: 8px;
-    height: 486px;
     background: rgba(227, 222, 215, 0.3);
 
 }
 
-div>button {
+div .plantButtons {
+    gap: 16px;
     display: flex;
     flex-direction: row;
+    height: 40px;
+    width: 321px;
+    left: 0px;
+    top: 192px;
+    border-radius: 0px;
+
 }
 
 
 /*2.- Café con las mejores condiciones*/
-#cardsBestConditionsItems {
-width: 316px;
-height: 232px;
+#cardsBestConditions{
+   
+
+
 }
 
 
 #cardsBestConditions {
-    background-image: url("https://s3-alpha-sig.figma.com/img/03a7/c79a/086aa1e226e5adfe010fd0fb3ff3e2cb?Expires=1685318400&Signature=CAlTit-JRAZrKabAm3GraaDpYhg3X0NGEEiH3QjpG96AmlsdEuz1H4N3ZFr-Y7uhCN-Ow7QXE20v18NxhYYx53i7koCVJUVRrLJ7llo8WvKunZequToJotQtdJ5WtH7PJeoImwJD2SbHN3v2wznyD10Pwg6f5qcc6nd4Q9KE6V-hBi0MVRuiudWWJyKpCBU3sPybGZt0dVlOFTKZFD6vnOkfSOIwnKozq3Rcx5uf1DrwFTm3botGQOe2xrpk-9w2l46CLbHpQiKQpaHEm8F5B-ydPB1pSWTtEU1Uvg2cfX94pvXdpj1ur8ONvGa71v1YeObFg4gbb7xBMd8LNwPl1g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"); 
-    
+    background-image: url("https://s3-alpha-sig.figma.com/img/03a7/c79a/086aa1e226e5adfe010fd0fb3ff3e2cb?Expires=1685318400&Signature=CAlTit-JRAZrKabAm3GraaDpYhg3X0NGEEiH3QjpG96AmlsdEuz1H4N3ZFr-Y7uhCN-Ow7QXE20v18NxhYYx53i7koCVJUVRrLJ7llo8WvKunZequToJotQtdJ5WtH7PJeoImwJD2SbHN3v2wznyD10Pwg6f5qcc6nd4Q9KE6V-hBi0MVRuiudWWJyKpCBU3sPybGZt0dVlOFTKZFD6vnOkfSOIwnKozq3Rcx5uf1DrwFTm3botGQOe2xrpk-9w2l46CLbHpQiKQpaHEm8F5B-ydPB1pSWTtEU1Uvg2cfX94pvXdpj1ur8ONvGa71v1YeObFg4gbb7xBMd8LNwPl1g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+    text-align: center;
+    height: 380px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     background-color: #FFFFFF;
-    padding: 48px 147px;
+    
     text-align: center;
     align-self: center;
     /* flex-basis: 50px; */
@@ -174,13 +209,26 @@ height: 232px;
 
 
 /*3.- Novedades*/
-#newFeatures{
-    display: flex;
-    flex-direction: row;
-    padding: 20px
+
+#newFeatures {
+    /*  font-style: */
+    /* padding: 20px */
 }
+
 h3 .bestConditions {
 
+    text-align: center;
+
+}
+
+#coffeeBagfor4 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.coffeeBag {
+    align-items: center;
     text-align: center;
 }
 
