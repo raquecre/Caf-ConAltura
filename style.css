@@ -3,7 +3,6 @@
 
 /*https://s3-alpha-sig.figma.com/img/03a7/c79a/086aa1e226e5adfe010fd0fb3ff3e2cb?Expires=1685318400&Signature=CAlTit-JRAZrKabAm3GraaDpYhg3X0NGEEiH3QjpG96AmlsdEuz1H4N3ZFr-Y7uhCN-Ow7QXE20v18NxhYYx53i7koCVJUVRrLJ7llo8WvKunZequToJotQtdJ5WtH7PJeoImwJD2SbHN3v2wznyD10Pwg6f5qcc6nd4Q9KE6V-hBi0MVRuiudWWJyKpCBU3sPybGZt0dVlOFTKZFD6vnOkfSOIwnKozq3Rcx5uf1DrwFTm3botGQOe2xrpk-9w2l46CLbHpQiKQpaHEm8F5B-ydPB1pSWTtEU1Uvg2cfX94pvXdpj1ur8ONvGa71v1YeObFg4gbb7xBMd8LNwPl1g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4*/
 * {
-
     font-family: 'Inter', sans-serif;
 }
 
@@ -23,6 +22,7 @@ h2 {
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
+    text-align: center;
 }
 
 h3 {
@@ -33,6 +33,11 @@ h3 {
     /* identical to box height, or 133% */
     /* Green */
     color: #2A5B45;
+}
+
+h4 {
+    font-size: 14px;
+    text-align: center;
 }
 
 p {
@@ -65,20 +70,21 @@ p {
 }
 
 .greenButton {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 12px 24px;
-    gap: 8px;
-
+    color: #FFFFFF;
+    align-items:center;
     /*  width: 137px; */
     height: 40px;
-
     background: #2A5B45;
     border-radius: 4px;
+    margin: 0%;
+}
+.smallLogo{
+    width: 64px;
+    height: 64px;
 }
 
 /*Barra Gªl negra */
+
 nav {
     font-size: 14px;
     color: #FFFFFF;
@@ -88,9 +94,6 @@ nav {
     align-items: center;
     align-items: center;
     padding: 12px 40px 12px 40px;
-    /*gap: 341px; te da la medida de la pagina entera no de lo indv*/
-    /*     width: 1262px;
- */
     height: 64px;
     left: 16px;
     top: 16px;
@@ -109,7 +112,6 @@ ul {
     padding: 12px 40px;
     gap: 34px;
 
-    width: 1262px;
     height: 64px;
     left: 16px;
     top: 16px;
@@ -131,58 +133,61 @@ section {
 
 
 /* 1.-De la planta a tu taza*/
-.plantTaze {
+article.plantTaze {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 48px 40px;
     gap: 8px;
-
-    width: 1280px;
     height: 486px;
-
     background: rgba(227, 222, 215, 0.3);
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 
 }
 
-/* div > button {
+div>button {
     display: flex;
     flex-direction: row;
-} */
+}
 
 
 /*2.- Café con las mejores condiciones*/
-article>#cards {
-    background-color: red;
-    padding: 48px, 147px, 48px, 147px;
-    display: flex;
-    flex-direction: row;
+#cardsBestConditionsItems {
+width: 316px;
+height: 232px;
 }
 
 
-/* #cards div {  esto  no tiene sentido 
-     Card 
-
-
-     box-sizing: border-box;
-
-     Auto layout 
-
+#cardsBestConditions {
+    background-image: url("https://s3-alpha-sig.figma.com/img/03a7/c79a/086aa1e226e5adfe010fd0fb3ff3e2cb?Expires=1685318400&Signature=CAlTit-JRAZrKabAm3GraaDpYhg3X0NGEEiH3QjpG96AmlsdEuz1H4N3ZFr-Y7uhCN-Ow7QXE20v18NxhYYx53i7koCVJUVRrLJ7llo8WvKunZequToJotQtdJ5WtH7PJeoImwJD2SbHN3v2wznyD10Pwg6f5qcc6nd4Q9KE6V-hBi0MVRuiudWWJyKpCBU3sPybGZt0dVlOFTKZFD6vnOkfSOIwnKozq3Rcx5uf1DrwFTm3botGQOe2xrpk-9w2l46CLbHpQiKQpaHEm8F5B-ydPB1pSWTtEU1Uvg2cfX94pvXdpj1ur8ONvGa71v1YeObFg4gbb7xBMd8LNwPl1g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"); 
+    
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 24px;
-    gap: 16px;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    padding: 48px 147px;
+    text-align: center;
+    align-self: center;
+    /* flex-basis: 50px; */
 
-    width: 316px;
-    height: 232px;
+}
 
-     White 
 
-    background: #FFFFFF;
-    border: 1px solid #F7F5F3;
-    box-shadow: 0px 1px 4px rgba(227, 222, 215, 0.8);
-    border-radius: 8px;
-} */
+
+
+/*3.- Novedades*/
+#newFeatures{
+    display: flex;
+    flex-direction: row;
+    padding: 20px
+}
+h3 .bestConditions {
+
+    text-align: center;
+}
+
+#coffeeBagCostaRica {}
+
+#coffeeBagCostaRica {}
+
+#coffeeBagCostaRica {}
+
+#coffeeBagCostaRica {}
