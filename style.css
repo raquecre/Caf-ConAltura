@@ -1,7 +1,6 @@
 /*https://s3-alpha-sig.figma.com/img/03a7/c79a/086aa1e226e5adfe010fd0fb3ff3e2cb?Expires=1685318400&Signature=CAlTit-JRAZrKabAm3GraaDpYhg3X0NGEEiH3QjpG96AmlsdEuz1H4N3ZFr-Y7uhCN-Ow7QXE20v18NxhYYx53i7koCVJUVRrLJ7llo8WvKunZequToJotQtdJ5WtH7PJeoImwJD2SbHN3v2wznyD10Pwg6f5qcc6nd4Q9KE6V-hBi0MVRuiudWWJyKpCBU3sPybGZt0dVlOFTKZFD6vnOkfSOIwnKozq3Rcx5uf1DrwFTm3botGQOe2xrpk-9w2l46CLbHpQiKQpaHEm8F5B-ydPB1pSWTtEU1Uvg2cfX94pvXdpj1ur8ONvGa71v1YeObFg4gbb7xBMd8LNwPl1g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4*/
 
 body {
-
     font-family: 'Outfit', sans-serif;
 
 }
@@ -56,40 +55,30 @@ p {
 }
 
 /*BOTONES*/
-.blackButton {
-    color: #FFFFFF;
+.basicButton {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-weight: bold;
-    left: 16px;
-    top: 16px;
-    background: #1F1815;
     border-radius: 4px;
     font-family: 'Outfit', sans-serif;
+    color: #FFFFFF;
+    border-style: none;
 
 }
 
+.blackButton {
+    background: #1F1815;
+}
 
 .greenButton {
-    font-family: 'Outfit', sans-serif;
-    color: #FFFFFF;
-    /*align-items:center;*/
-    width: 137px;
     background: #2A5B45;
-    border: solid;
-    margin: 0%;
-    font-weight: bold;
-
-
-
 }
 
-
-.smallButton {
-    width: 60px;
-    height: 32px;
+.greyButton {
+    background-color: #515051;
 }
+
 
 /*Barra Gªl negra */
 #webCafeDeAltura {
@@ -97,20 +86,15 @@ p {
 
 }
 
-nav {
 
-    height: 64px;
-    left: 16px;
-    top: 16px;
+nav {
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
     align-content: space-between;
     align-items: center;
     align-items: center;
-    padding: 12px 40px;
-
-
+    /* padding: 12px 40px;*/
     background: #2B2A2B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
 }
@@ -131,42 +115,23 @@ ul {
 #navContactPhone {
 
     display: flex;
+    flex-direction: row;
     align-content: space-between;
     align-items: center;
     align-items: center;
 
 }
 
-/* Estructura gªl página*/
-section {
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-
-    position: relative;
-    /* width: 1280px;
-    height: 3480px; */
-    background: #FFFFFF;
-}
-
+/* Estructura gªl página
 
 /* 1.-De la planta a tu taza*/
-article.plantTaze {
+section.plantTaze {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    left: 0px;
-    top: 64px;
-    border-radius: 0px;
-    /*  padding: 48px 40px; */
-    gap: 8px;
-    background: rgba(227, 222, 215, 0.3);
 
 }
 
-div .plantButtons {
+div.plantButtons {
     gap: 16px;
     display: flex;
     flex-direction: row;
@@ -180,72 +145,39 @@ div .plantButtons {
 
 
 /*2.- Café con las mejores condiciones*/
-#cardsBestConditions {}
 
-
-#cardsBestConditions {
-    background-image: url("https://s3-alpha-sig.figma.com/img/03a7/c79a/086aa1e226e5adfe010fd0fb3ff3e2cb?Expires=1685318400&Signature=CAlTit-JRAZrKabAm3GraaDpYhg3X0NGEEiH3QjpG96AmlsdEuz1H4N3ZFr-Y7uhCN-Ow7QXE20v18NxhYYx53i7koCVJUVRrLJ7llo8WvKunZequToJotQtdJ5WtH7PJeoImwJD2SbHN3v2wznyD10Pwg6f5qcc6nd4Q9KE6V-hBi0MVRuiudWWJyKpCBU3sPybGZt0dVlOFTKZFD6vnOkfSOIwnKozq3Rcx5uf1DrwFTm3botGQOe2xrpk-9w2l46CLbHpQiKQpaHEm8F5B-ydPB1pSWTtEU1Uvg2cfX94pvXdpj1ur8ONvGa71v1YeObFg4gbb7xBMd8LNwPl1g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+section.cardsBestConditions {
+    background-image: url(./img/backCooffee.jpeg);
     background-position: center;
     text-align: center;
-    align-items: center;
-    background-color: #FFFFFF;
-}
-
-#cardsCheckSendDiscounts {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+section.cardsBestConditions h3{
+    color: white;
+    font-size: 24px;
+}
+section.cardsBestConditions article{
+    background-color: #FFFFFF;
+    width: 316px;
+    height: 232px;
     gap: 16px;
-
-
+    border-radius: 4px;
+    
 }
 
-#checklist {
-    background-color: #FFFFFF;
-
-    left: 0px;
-    top: 0px;
-    border-radius: 8px;
-    padding: 24px;
-
+section.cardsBestConditions button{
+    background-color: #2A5B45;
 }
-
-#sending {
-    background-color: #FFFFFF;
-
-    left: 0px;
-    top: 0px;
-    border-radius: 8px;
-    padding: 24px;
-}
-
-#discountsBenefits {
-    background-color: #FFFFFF;
-
-    left: 0px;
-    top: 0px;
-    border-radius: 8px;
-    padding: 24px;
-}
-
-
 
 /*3.- Novedades*/
-#newFeatures {
-    /*  height: 466px; */
-    /* padding: 40px;
-    gap: 40px; */
-}
 
 #coffeeBagfor4 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-
-
 
 }
 
@@ -302,11 +234,6 @@ h3 .bestConditions {
     margin: 16px;
 }
 
-h3.whoToOrder {
-    /* como separar la flechita de ahi */
-
-}
-
 /*5.- Cooffee Shop  */
 #cooffeeShopText {
     display: flex;
@@ -315,18 +242,59 @@ h3.whoToOrder {
     padding: 40px;
 }
 
-#cooffeeShopText > article{
+.cooffeeShopText {
     display: flex;
     flex-direction: column;
-    
+    /* padding: 181px, 783px 182px 40px;*/
+    /*aqui tendría que ajustarse adecuadamente*/
 }
+
+
 /*5.- Contact us */
-article #contactUs-Form{
+#contactUs-Form {
     display: flex;
     text-align: center;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+}
+
+#contactUs-Form h3 {
+    color: #000000;
+}
+
+#contactUsInfo {
+    background: #E3DED7;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: row;
+}
+
+.questions {
+    gap: 24px;
+}
+
+.answerQuest {
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    gap: 24px;
+}
+
+
+/*------------FOOTER--------- */
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
 
 }
-#contactUsInfo{
-    background: #E3DED7;
+
+.listInFooter {
+    display: flex;
+    flex-direction: column;
+
 }
