@@ -62,7 +62,6 @@ p {
     font-weight: bold;
     border-radius: 4px;
     font-family: 'Outfit', sans-serif;
-    color: #FFFFFF;
     border-style: none;
 
 }
@@ -71,21 +70,26 @@ p {
     background: #1F1815;
 }
 
-.greenButton {
-    background: #2A5B45;
-}
+
 
 .greyButton {
     background-color: #515051;
+    width: 130px;
+    height: 40px;
+    padding: 0px;
 }
 
+/*IMG buttons*/
+.contactPhone {
+    width: 18px;
+    height: 18px;
+}
 
 /*Barra Gªl negra */
 #webCafeDeAltura {
     font-size: 23.46px;
 
 }
-
 
 nav {
     color: #FFFFFF;
@@ -97,6 +101,25 @@ nav {
     /* padding: 12px 40px;*/
     background: #2B2A2B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+}
+
+nav div.navContactPhone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 288px;
+    height: 40px;
+
+
+}
+
+#navSesion {
+    width: 130px;
+    height: 40px;
+    background-color: #515051;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
 }
 
 /*items desde tienda hasta contacto*/
@@ -144,31 +167,57 @@ div.plantButtons {
 }
 
 
-/*2.- Café con las mejores condiciones*/
+/* 2.- Café con las mejores condiciones */
 
 section.cardsBestConditions {
     background-image: url(./img/backCooffee.jpeg);
     background-position: center;
+    padding: 35px 147px;
     text-align: center;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    
+
 }
-section.cardsBestConditions h3{
+
+.cardsBestConditionsTitle>h3 {
     color: white;
+   
     font-size: 24px;
-}
-section.cardsBestConditions article{
-    background-color: #FFFFFF;
-    width: 316px;
-    height: 232px;
-    gap: 16px;
-    border-radius: 4px;
     
 }
 
-section.cardsBestConditions button{
+section.cardsBestConditions button {
     background-color: #2A5B45;
+    border-radius: 20px;
+    height: 64px;
+    width: 64px;
+    left: 126px;
+    top: 24px;
+    padding: 12px;
+
+}
+
+section.cardsBestConditions article {
+    background-color: #FFFFFF;
+    width: 316px;
+    height: 232px;
+    border-radius: 4px;
+
+}
+
+div.cardsBestConditionsCoffee {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+div.cardsBestConditionsCoffee article.cardsBestConditions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.cardsBestConditionsCoffee article.cardsBestConditions h3{
+    color: #000000;
 }
 
 /*3.- Novedades*/
@@ -187,6 +236,8 @@ h3 .bestConditions {
 }
 
 .coffeeBag {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     border: 1px solid #E3DED7;
@@ -194,13 +245,18 @@ h3 .bestConditions {
 }
 
 #newFeatures button {
-
-    background: rgba(42, 91, 69, 0.7);
-}
-
-#newFeatures button :last-of-type {
     background: rgba(42, 91, 69);
+    display: flex;
+    justify-content: space-around;
+    width: 60px;
+    height: 32px;
+    text-align: center;
+    color: #FFFFFF;
 }
+
+/* #newFeatures button:last-of-type {
+    background: rgba(42, 91, 69, 0.7);
+} */
 
 /*tiene que haber otra forma de seleccionar los tres primeros solo*/
 
@@ -290,11 +346,38 @@ footer {
     background-color: #000000;
     color: #FFFFFF;
     display: flex;
+    justify-content: space-around;
 
 }
 
+#emailFooter {
+    background-color:#515051;
+    width: 232px;
+    height: 48px;
+    font-size: 14px;
+    text-align: center;
+    gap: 8px;
+    color: #FFFFFF;
+}
+
+#phoneFooter{
+    color: #FFFFFF;
+}
+
+.logoCafeDeAltura {
+    font-size: 24px;
+    display: flex;
+    justify-content: center
+}
+
 .listInFooter {
+
+    padding: 0px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+}
 
+#firstColumn {
+    gap: 8px;
 }
