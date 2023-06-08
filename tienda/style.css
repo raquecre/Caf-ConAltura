@@ -1,0 +1,263 @@
+
+
+
+/*font family text*/
+body {
+    font-family: 'Outfit', sans-serif;
+
+}
+/* GENERAL*/
+h1 {
+
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+    /* or 110% */
+    color: #000000;
+    margin: 0px;
+}
+
+h2 {
+    color: #2A5B45;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    font-weight: bold;
+
+    /* identical to box height, or 133% */
+    /* Green */
+    color: #2A5B45;
+}
+
+h4 {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+}
+/*BOTONES Ccas BÁSICAS*/
+.basicButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 4px;
+    font-family: 'Outfit', sans-serif;
+    border-style: none;
+
+}
+
+
+/*Barra Gªl negra */
+#webCafeDeAltura {
+    font-size: 23.46px;
+}
+
+nav {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    align-items: center;
+    /* padding: 12px 40px;*/
+    background: #2B2A2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+}
+
+nav div.navContactPhone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 288px;
+    height: 40px;
+
+
+}
+
+#navSesion {
+    width: 130px;
+    height: 40px;
+    background-color: #515051;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+/*items desde tienda hasta contacto*/
+ul {
+
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 40px;
+    gap: 34px;
+    left: 16px;
+    top: 16px;
+}
+
+#navContactPhone {
+
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    align-items: center;
+
+}
+/*------------------ÚLTIMOS ORÍGENES---------------*/
+article.lastOrigins{
+    gap: 24px;
+}
+
+.coffeeBagfor4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.coffeeBag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #E3DED7;
+    border-radius: 8px;
+}
+
+.lastOrigins button.basicButton {
+    background: rgba(42, 91, 69);
+    display: flex;
+    justify-content: space-around;
+    width: 60px;
+    height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/*------------------Café con las mejores condiciones---------------*/
+
+
+section.cardsBestConditions {
+    background-image: url(./img/backCooffee.jpeg);
+    background-position: center;
+   padding: 20px;
+    text-align: center;
+
+
+}
+
+.cardsBestConditionsTitle>h3 {
+    color: white;
+
+    font-size: 24px;
+
+}
+
+section.cardsBestConditions button {
+    background-color: #2A5B45;
+    border-radius: 20px;
+    height: 64px;
+    width: 64px;
+    left: 126px;
+    top: 24px;
+    padding: 12px;
+
+}
+
+section.cardsBestConditions article {
+    background-color: #FFFFFF;
+    width: 316px;
+    height: 232px;
+    border-radius: 4px;
+
+}
+
+div.cardsBestConditionsCoffee {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+div.cardsBestConditionsCoffee article.cardsBestConditions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.cardsBestConditionsCoffee article.cardsBestConditions h3 {
+    color: #000000;
+}
+
+
+/*------------FOOTER--------- */
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+footer :first-child{
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer :nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+#emailFooter {
+    background-color: #515051;
+    width: 232px;
+    height: 48px;
+    font-size: 14px;
+    text-align: center;
+    gap: 8px;
+    color: #FFFFFF;
+}
+
+#phoneFooter {
+    color: #FFFFFF;
+    background-color: #515051;
+    text-align: center;
+}
+
+.logoCafeDeAltura {
+    font-size: 24px;
+    display: flex;
+    justify-content: center
+}
+
+.listInFooter {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px
+}
+
+#firstColumn {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
