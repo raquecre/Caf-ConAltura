@@ -30,9 +30,6 @@ h3 {
     font-weight: 600;
     font-size: 18px;
     font-weight: bold;
-
-    /* identical to box height, or 133% */
-    /* Green */
     color: #2A5B45;
 }
 
@@ -56,8 +53,7 @@ p {
 
 /*BOTONES*/
 .basicButton {
-    display: flex;
-    flex-direction: row;
+
     align-items: center;
     font-weight: bold;
     border-radius: 4px;
@@ -86,57 +82,74 @@ p {
 }
 
 /*Barra Gªl negra */
+
+
 #webCafeDeAltura {
     font-size: 23.46px;
 
 }
 
+/* general */
 nav {
     color: #FFFFFF;
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
     align-content: space-between;
-    align-items: center;
     align-items: center;
     /* padding: 12px 40px;*/
     background: #2B2A2B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
 }
 
-nav div.navContactPhone {
+/* Enlaces navegación */
+section.webCafeDeAltura {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+#navUl>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+/* contacto + iniciar sesión */
+nav section.navContactPhone {
     display: flex;
     align-items: center;
-    gap: 8px;
-    width: 288px;
-    height: 40px;
-
+    gap: 9px;
 
 }
 
 #navSesion {
-    width: 130px;
-    height: 40px;
     background-color: #515051;
     display: flex;
     justify-content: center;
     color: #FFFFFF;
+    width: 130px;
+    height: 40px;
 }
 
-/*items desde tienda hasta contacto*/
-ul {
 
-    list-style: none;
+#navUl li:hover {
+    background-color: #515051;
+    background: rgba(247, 245, 243, 0.1);
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 12px 40px;
-    gap: 34px;
-    left: 16px;
-    top: 16px;
+    align-items: flex-start;
+
+
+
 }
 
 #navContactPhone {
-
     display: flex;
     flex-direction: row;
     align-content: space-between;
@@ -166,23 +179,34 @@ div.plantButtons {
 
 }
 
+.plantTaze button#plantTazeBlack {
+    color: #FFFFFF;
+    background-color: #000000;
+
+}
+
+.plantTaze button#plantTazeGreen {
+    background-color: #2A5B45;
+    color: #FFFFFF;
+}
+
 
 /* 2.- Café con las mejores condiciones */
 
 section.cardsBestConditions {
     background-image: url(./img/backCooffee.jpeg);
     background-position: center;
-    padding: 35px 147px;
+    padding: 20px;
     text-align: center;
-    
+
 
 }
 
 .cardsBestConditionsTitle>h3 {
     color: white;
-   
+
     font-size: 24px;
-    
+
 }
 
 section.cardsBestConditions button {
@@ -193,6 +217,7 @@ section.cardsBestConditions button {
     left: 126px;
     top: 24px;
     padding: 12px;
+    box-shadow: none;
 
 }
 
@@ -210,13 +235,13 @@ div.cardsBestConditionsCoffee {
 
 }
 
-div.cardsBestConditionsCoffee article.cardsBestConditions{
+div.cardsBestConditionsCoffee article.cardsBestConditions {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-div.cardsBestConditionsCoffee article.cardsBestConditions h3{
+div.cardsBestConditionsCoffee article.cardsBestConditions h3 {
     color: #000000;
 }
 
@@ -244,6 +269,14 @@ h3 .bestConditions {
     border-radius: 8px;
 }
 
+.coffeeBag:hover {
+    background: #F7F5F3;
+    /* Taupe */
+
+    border: 1px solid #E3DED7;
+    border-radius: 8px;
+}
+
 #newFeatures button {
     background: rgba(42, 91, 69);
     display: flex;
@@ -254,22 +287,13 @@ h3 .bestConditions {
     color: #FFFFFF;
 }
 
-/* #newFeatures button:last-of-type {
-    background: rgba(42, 91, 69, 0.7);
-} */
-
-/*tiene que haber otra forma de seleccionar los tres primeros solo*/
-
 #urlSee {
     text-align: center;
 
 }
 
 /*4.- Preguntas frecuentes*/
-#faqsarticle>h2 {
-    color: #FFFFFF;
-}
-
+/* Gal */
 #faqsarticle {
     background-color: #2A5B45;
     display: flex;
@@ -280,15 +304,59 @@ h3 .bestConditions {
 
 }
 
+/* Items */
+#faqsarticle>h2 {
+    color: #FFFFFF;
+}
+
+#faqsarticle .cardFaqstittle {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+
+}
+
+/* #faqsarticle>.cardFaqs>p {
+    display: none;
+} */
+
 #faqsarticle h3 {
     color: #000000;
+    padding: 7px;
+
 }
+        /* ejemplito de js togle */
+#idExample{
+    display: none;
+}
+.mystyle {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+  }
+
+
 
 .cardFaqs {
     background-color: #FFFFFF;
     border-radius: 10px;
     margin: 16px;
+    width: 668px;
 }
+
+#questions {
+    color: #FFFFFF;
+    padding: 2.5%;
+
+
+}
+
+#questions:hover {
+    text-decoration: underline;
+}
+
 
 /*5.- Cooffee Shop  */
 #cooffeeShopText {
@@ -309,8 +377,7 @@ h3 .bestConditions {
 /*5.- Contact us */
 #contactUs-Form {
     display: flex;
-    text-align: center;
-    display: flex;
+    text-align: start;
     flex-direction: row;
 }
 
@@ -327,9 +394,29 @@ h3 .bestConditions {
     flex-direction: row;
 }
 
-.questions {
-    gap: 24px;
+/*<!--  Formulario  -->*/
+
+section#registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+section#registration button {
+    background-color: #2A5B45;
+    color: #FFFFFF;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    padding: 0px;
+}
+
+article.questions {
+    display: flex;
+    flex-direction: column;
+
+}
+
 
 .answerQuest {
     background: #FFFFFF;
@@ -347,21 +434,34 @@ footer {
     color: #FFFFFF;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+}
 
+footer :first-child {
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer :nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #emailFooter {
-    background-color:#515051;
-    width: 232px;
-    height: 48px;
+    background-color: #515051;
     font-size: 14px;
     text-align: center;
     gap: 8px;
     color: #FFFFFF;
+    display: flex;
+    padding: 8px;
+    text-align: center;
 }
 
-#phoneFooter{
+#phoneFooter {
     color: #FFFFFF;
+   
 }
 
 .logoCafeDeAltura {
@@ -371,13 +471,16 @@ footer {
 }
 
 .listInFooter {
-
+    list-style: none;
     padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 6px
 }
 
 #firstColumn {
     gap: 8px;
+    display: flex;
+    flex-direction: column;
 }
