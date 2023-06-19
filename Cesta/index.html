@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Cart</title>
+</head>
+
+<body>
+    <nav>
+        <!-- <a href="../index.html"> -->
+        <a target="_blank" href="../index.html">
+            <p class="logoCafeDeAltura" id="webCafeDeAltura">cafedealtura.com</p>
+        </a>
+        <img name="mainlogo" src="../img/taza.png">
+        <ul id="navegationBottoms">
+
+            <li><a target="_blank" href="../tienda/index.html"> Tienda </a></li>
+
+            <li><a href="../index.html#contactUsForm"> Suscripción </a></li>
+            <li> Para Empresas</li>
+            <li> Sobre Nosotros</li>
+            <li> <a href="../index.html#contactUsForm">Contacto</a></li>
+
+        </ul>
+
+        <div class="navContactPhone">
+            <img class="contactPhone" src="../img/Phone.png">
+
+            +34 919 49 05 18
+            <button id="navSesion"> Iniciar Sesión</button>
+        </div>
+        <img src="../img/shop.svg">
+        <div class="cartCoffee"></div>
+    </nav>
+
+    <article class="tittle">
+        <h2>Cesta (<div class="cartCoffee"></div>)</h2>
+    </article>
+
+    <article class="mainContent">
+        <section class="productsTable">
+            <h3> Productos</h3>
+            <div class="productsInCart">
+                <!--  cafés que se han añadido al carrito -->
+            </div>
+
+
+
+
+            <h3 class="typeOfSend"> Seleccionar envío</h3>
+            <section class="typeOfSend">
+                <!-- aquí van los cafés seleccionados -->
+                <div class="deliveryOptions" id="freeSend">
+                    <input type="radio" name="typeOfSend" value="0" onclick="shippingSelection()">
+                    <div class="shippingFeatures">
+                        <p class="shippingFeatures"><strong> Envío 5-7días</strong></p>
+                        <p>Opción estándar sin seguimiento</p>
+                    </div>
+                    <h3>GRATIS</h3>
+                </div>
+
+                <div class="deliveryOptions" id="ExpressSend">
+                    <input type="radio" name="typeOfSend" value="9" onclick="shippingSelection()">
+                    <div class="shippingFeatures">
+                        <p class="shippingFeatures"><strong> Envío urgente 24h </strong></p>
+                        <p class="shippingFeatures">Recibe tu pedido en las siguientes 24h (Para pedidos realizados
+                            antes de las 13:00).</p>
+                    </div>
+                    <h3 class="priceSend"> 9,00€</h3>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="totalCart">
+            <div class="totalCart">
+                <h3 class="totalCart"> Total del carrito</h3>
+                <div class="subtotalCartContainer">
+                    <p> SUBTOTAL</p>
+                </div>
+                <div class="sendCart">
+                    <p> ENVÍO</p>
+                </div>
+                <div class="finishTotal">
+                    <p> TOTAL</p>
+
+                </div>
+                <div class="buttonContainer">
+                    <form class="button" target="_blank" action="../index.html">
+                        <button class="checkOut"> Ir a checkout</button>
+                    </form>
+                    <form class="button" action="../tienda/index.html">
+                        <button class="goShop"> Seguir comprando </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+
+
+    <script src="../tienda/main.js"></script>
+
+</body>
+
+</html>
